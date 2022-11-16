@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap');
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "h h h h"
+                         "n n n n"
+                         "ar ar ar as"
+                         "f f f f";
+
+    gap: 10px;
+    margin: 10px;
+}
+
+header, nav, article, aside, footer{
+    border: 1px solid black;
+}
+
+header{
+    grid-area: h;
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+nav{
+    grid-area: n;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+article{
+    grid-area: ar;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+aside{
+    grid-area: as;
+    padding: 10px;
+}
+
+footer{
+    grid-area: f;
+    text-align: center;
+    padding: 5px;
+}
+
+button{
+    background-color:lightblue;
+    margin: 5px;
+}
+
+.termek{
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.vonalkod{
+    font-family: "Libre Barcode 39";
+}
+
+.arced{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img{
+    width: 200px;
+}
