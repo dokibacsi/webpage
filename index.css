@@ -7,6 +7,8 @@
 body{
     margin: 0;
     padding: 0;
+    background: url(background.png);
+    background-size: 10px;
 }
 
 *{
@@ -22,11 +24,11 @@ main{
                          "f f f f";
 
     gap: 10px;
-    margin: 10px;
+    color: white;
 }
 
 header, nav, article, aside, footer{
-    border: 1px solid black;
+    border: 3px solid #574327;
 }
 
 header{
@@ -70,16 +72,15 @@ footer{
     padding: 5px;
 }
 
-.gomb{
+button{
     background-color: rgb(0, 0, 220);
     padding: 0;
-    max-width: 100px;
     text-align: center;
+    padding: 2px 30px 2px 30px;
     border: 2px solid blue;
+    border-radius: 10px;
     color: white;
-    border-radius: 5px;
     font-family: "Neucha";
-    margin-left: 90px;
 }
 
 .gomb a{
@@ -89,7 +90,8 @@ footer{
 .termek{
     margin: 10px;
     padding: 5px;
-    border: 1px solid black;
+    border: 3px solid #574327;
+    background-color: black;
 }
 
 .vonalkod{
@@ -114,4 +116,15 @@ footer{
     text-align: center;
     font-family: "Covered By Your Grace";
     font-size: 18pt;
+}
+
+::-webkit-scrollbar{
+    background: url(background.png);
+    background-size: 10px;
+    max-width: 7.5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 20px;
 }
