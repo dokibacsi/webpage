@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap');
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 body{
     margin: 0;
@@ -57,7 +56,7 @@ nav li{
 article{
     grid-area: ar;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 aside{
@@ -71,9 +70,20 @@ footer{
     padding: 5px;
 }
 
-button{
-    background-color:lightblue;
-    margin: 5px;
+.gomb{
+    background-color: rgb(0, 0, 220);
+    padding: 0;
+    max-width: 100px;
+    text-align: center;
+    border: 2px solid blue;
+    color: white;
+    border-radius: 5px;
+    font-family: "Neucha";
+    margin-left: 90px;
+}
+
+.gomb a{
+    text-decoration: none;
 }
 
 .termek{
@@ -87,10 +97,21 @@ button{
 }
 
 .arced{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    max-width: 300px;
+    border: 1px solid black;
+    margin-left: 25px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Kaushan Script';
 }
 
-img{
+.termek img{
     width: 200px;
+    margin-left: 75px;
+}
+
+.termek h3{
+    text-align: center;
+    font-family: "Covered By Your Grace";
+    font-size: 18pt;
 }
