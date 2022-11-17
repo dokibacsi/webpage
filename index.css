@@ -7,8 +7,9 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(background.png);
+    
     background-size: 10px;
+    background: url(background.png);
 }
 
 
