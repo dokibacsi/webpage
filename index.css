@@ -3,12 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
 
 body{
     margin: 0;
     padding: 0;
-    background: url('background.png');
-    background-size: 10px;
+    background-color: rgb(20, 20, 20);
 }
 
 
@@ -30,6 +31,8 @@ main{
 
 header, nav, article, aside, footer{
     border: 3px solid #574327;
+    background-color: black;
+    width: 100%;
 }
 
 header{
@@ -59,7 +62,7 @@ nav li{
 article{
     grid-area: ar;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 aside{
@@ -73,15 +76,27 @@ footer{
     padding: 5px;
 }
 
-button{
+.arced button{
     background-color: rgb(0, 0, 220);
-    padding: 0;
     text-align: center;
-    padding: 2px 30px 2px 30px;
     border: 2px solid blue;
+    padding: 0px 10px 0px 10px;
     border-radius: 10px;
     color: white;
     font-family: "Neucha";
+    height: 30px;
+    margin: auto;
+}
+
+.arced button:active{
+    background-color: rgb(0, 0, 170);
+    text-align: center;
+    border: 2px solid blue;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Neucha";
+    height: 30px;
 }
 
 .gomb a{
@@ -93,30 +108,50 @@ button{
     padding: 5px;
     border: 3px solid #574327;
     background-color: black;
+    max-width: 300px;
 }
 
-.vonalkod{
-    font-family: "Libre Barcode 39";
+.termek .leiras{
+    font-family: 'Indie Flower';
+    text-align: center;
+    width: 175px;
+    margin: auto;
+    margin-top: 10px;
 }
 
 .arced{
-    max-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border: 1px solid black;
-    margin-left: 25px;
     padding: 10px;
     text-align: center;
     font-family: 'Kaushan Script';
 }
 
 .termek img{
-    width: 200px;
-    margin-left: 75px;
+    width: 100%;
+    max-width: 200px;
+    margin-left: 25px;
 }
 
 .termek h3{
     text-align: center;
     font-family: "Covered By Your Grace";
     font-size: 18pt;
+}
+
+aside h3{
+    font-family: 'Changa';
+    text-align: center;
+    text-decoration: underline;
+}
+
+.kosartermek{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-left: 50px;
+    max-width: 300px;
 }
 
 ::-webkit-scrollbar{
@@ -128,4 +163,125 @@ button{
 ::-webkit-scrollbar-thumb{
     background-color: white;
     border-radius: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "h h"
+                             "n n "
+                             "ar as"
+                             "f f";
+    
+        gap: 10px;
+        color: white;
+    }
+
+    header, nav, aside, article, footer{
+        width: 100%;
+    }
+
+    article{
+        grid-area: ar;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .termek{
+        margin: 10px;
+        padding: 5px;
+        border: 3px solid #574327;
+        background-color: black;
+        max-width: 300px;
+    }
+
+    .termek img{
+        width: 80%;
+        max-width: 150px;
+        margin-left: 15px;
+    }
+
+    .termek .leiras{
+        font-family: 'Indie Flower';
+        text-align: center;
+        width: 165px;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .arced{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .kosartermek{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        max-width: 300px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "h"
+                             "n"
+                             "as"
+                             "ar"
+                             "f";
+    
+        gap: 10px;
+        color: white;
+        width: 80%;
+    }
+
+    header, nav, aside, article, footer{
+        width: 100%;
+    }
+
+    article{
+        grid-area: ar;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .termek{
+        margin: 10px;
+        padding: 5px;
+        border: 3px solid #574327;
+        background-color: black;
+        max-width: 300px;
+    }
+
+    .termek img{
+        width: 80%;
+        max-width: 150px;
+        margin-left: 15px;
+    }
+
+    .termek .leiras{
+        font-family: 'Indie Flower';
+        text-align: center;
+        width: 165px;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .arced{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .kosartermek{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        max-width: 300px;
+        margin: auto;
+    }
 }
